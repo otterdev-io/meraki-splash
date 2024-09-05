@@ -24,31 +24,28 @@ LICENSE: MIT
     <head>
         <link rel="stylesheet" type="text/css" href="./css/style.css">
     </head>
-    <div class="container">  
-      
+    <div class="main-container login-screen">
+      <div class="login-room">
+        <img class="room" src="./img/scb-room.jpg"/>
+      </div>
       <form id="loginForm" action="#">
-        <center><a href="http://developers.meraki.com"><img src="./img/meraki-logo.png" width="50%"/></a></center>
-        <br>
+        <img class="logo" src="./img/scb-logo.png" width="80%"/></a>
         <fieldset>
-          <input id="name" placeholder="Your name" type="text" tabindex="1" required autofocus>
+          <button type="submit" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="white" d="M12 21q-1.05 0-1.775-.725T9.5 18.5t.725-1.775T12 16t1.775.725t.725 1.775t-.725 1.775T12 21m-5.65-5.65l-2.1-2.15q1.475-1.475 3.463-2.337T12 10t4.288.875t3.462 2.375l-2.1 2.1q-1.1-1.1-2.55-1.725T12 13t-3.1.625t-2.55 1.725M2.1 11.1L0 9q2.3-2.35 5.375-3.675T12 4t6.625 1.325T24 9l-2.1 2.1q-1.925-1.925-4.462-3.012T12 7T6.563 8.088T2.1 11.1" />
+            </svg>
+            Free WiFi
+          </button>
         </fieldset>
-        <fieldset>
-          <input id="email" placeholder="Your Email Address" type="email" tabindex="2" required>
-        </fieldset>
-        <fieldset>
-          <input id="company" placeholder="Your Company (optional)" type="text" tabindex="3">
-        </fieldset>
-        <fieldset>
-          <button type="submit" >Log in to WiFi</button>
-        </fieldset>
-        <p class="copyright">Sample by <a href="http://www.InternetOfLEGO.com" target="_blank" title="Internet of LEGO">Internet of LEGO</a></p>
+        <p>By clicking on the above button, I accept the <a href="#">Terms & Conditions</a> of the WiFi service.</p>
       </form>
     </div>
-    <hr>
-    <h4>Debugging Stats</h4>
-    <p><label>Base Grant URL: </label><label id="baseGrantURL"></label></p>
-    <p><label>User Continue URL: </label><label id="userContinueURL"></label></p>
-    <p><label>Client IP: </label><label id="clientIP"></label></p>
+      <hr>
+      <h4>Debugging Stats</h4>
+      <p><label>Base Grant URL: </label><label id="baseGrantURL"></label></p>
+      <p><label>User Continue URL: </label><label id="userContinueURL"></label></p>
+      <p><label>Client IP: </label><label id="clientIP"></label></p>
     <p><label>Client MAC: </label><label id="clientMAC"></label></p>
     <p><label>Access Point MAC: </label><label id="nodeMAC"></label></p>
         
