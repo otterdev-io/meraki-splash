@@ -38,15 +38,18 @@ body {
 }
 
 #loginForm {
-    background: #F9F9F9;
     padding: 25px;
-    margin: 150px 0;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    margin: auto;
+    flex: 1 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
 #loginForm h3 {
     display: block;
-    font-size: 30px;
+    font-size: 18px;
     font-weight: 300;
     margin-bottom: 10px;
 }
@@ -61,9 +64,7 @@ body {
 fieldset {
     border: medium none !important;
     margin: 0 0 10px;
-    min-width: 100%;
     padding: 0;
-    width: 100%;
 }
 
 #loginForm input[type="text"],
@@ -97,17 +98,24 @@ fieldset {
 
 #loginForm button[type="submit"] {
     cursor: pointer;
-    width: 100%;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
     border: none;
-    background: #4CAF50;
+    background: #0473EA;
     color: #FFF;
     margin: 0 0 5px;
     padding: 10px;
-    font-size: 15px;
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
 }
 
 #loginForm button[type="submit"]:hover {
-    background: #43A047;
     -webkit-transition: background 0.3s ease-in-out;
     -moz-transition: background 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
@@ -119,6 +127,43 @@ fieldset {
 
 .copyright {
     text-align: center;
+}
+
+.main-container {
+    max-width: 1060px;
+    padding: 20px 60px;
+}
+
+.thank-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+#loginForm svg {
+    width: 40%;
+    height: 40%;
+}
+
+.login-screen {
+    display: flex;
+    align-items: center;
+    min-height: 600px;
+}
+
+.login-room {
+    flex: 3 0 0;
+}
+
+.room {
+    width: 100%;
+    padding-right: 10%;
+}
+
+.thank-logo {
+    max-width: 125px;
 }
 
 #loginForm input:focus,
